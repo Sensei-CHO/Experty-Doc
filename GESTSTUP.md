@@ -1,4 +1,4 @@
-# Mise en place du server GestSup
+# Mise en place du serveur GestSup
 
 ## Installation Automatique:
 
@@ -108,4 +108,4 @@ chmod 660 /var/www/html/connect.php
 
 Se connecter, changer le mot de passe, puis configurer LDAP:
 
-![Alt text](image-10.png)
+![Alt text](images/image-10.png)
