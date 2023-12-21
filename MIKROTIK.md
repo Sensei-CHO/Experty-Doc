@@ -11,7 +11,7 @@ Cette documentation vous guidera à travers le processus de configuration d'un r
 
 Assurez-vous d'être connecté au routeur MikroTik via un navigateur Web en utilisant l'adresse IP par défaut (192.168.88.1). Connectez-vous avec les informations d'identification appropriées.
 
-![Alt text](image.png)
+![Alt text](images/image.png)
 
 
 ## Étape 2 : Configuration de l'interface WAN
@@ -32,7 +32,7 @@ Assurez-vous d'être connecté au routeur MikroTik via un navigateur Web en util
 
 ## Étape 4 : Vérification
 
-![Alt text](image-1.png)
+![Alt text](images/image-1.png)
 
 
 ## Étape 5: Mise en place du tunnel VXLAN
@@ -45,7 +45,7 @@ Ici le tunnel sera mit en place enter 2 routers.
 
 - Créer une interface VXLAN
 
-![Alt text](image-2.png)
+![Alt text](images/image-2.png)
 
 P.S. le VNI correspond à l'id du tunnel (à la même façon qu'un VLAN ID)
 
@@ -53,13 +53,13 @@ P.S. le VNI correspond à l'id du tunnel (à la même façon qu'un VLAN ID)
 
 Le VXLAN encapsule des packets L2 dans des packet L4, une interface VXLAN à donc besoin d'une address IP pour pouvoir router les packets.
 
-![Alt text](image-3.png)
+![Alt text](images/image-3.png)
 
 - Ajout du VTEP: 
 
 Un VTEP est un endpoint VXLAN, entre autre, l'autre bout du tunnel.
 
-![Alt text](image-4.png)
+![Alt text](images/image-4.png)
 
 P.S. Un tunnel VXLAN peut posseder plusieurs endpoints, ont peut donc avoir 1 interface pour plusieurs autres router.
 
@@ -68,19 +68,19 @@ P.S. Un tunnel VXLAN peut posseder plusieurs endpoints, ont peut donc avoir 1 in
 
 - Créer une interface VXLAN
 
-![Alt text](image-5.png)
+![Alt text](images/image-5.png)
 
 
 - Attribution de l'IP du tunnel:
 
 
-![Alt text](image-6.png)
+![Alt text](images/image-6.png)
 
 - Ajout du VTEP: 
 
 Un VTEP est un endpoint VXLAN, entre autre, l'autre bout du tunnel.
 
-![Alt text](image-7.png)
+![Alt text](images/image-7.png)
 
 
 ### Routage :
@@ -89,10 +89,10 @@ Pour router les packets via le tunnel VXLAN nous devons rajouters des routes pou
 
 - Router 1:
 
-![Alt text](image-9.png)
+![Alt text](images/image-9.png)
 
 P.S. le signe `%` force le passage sur l'interface spécifié après le signe.
 
 - Router 2:
 
-![Alt text](image-8.png)
+![Alt text](images/image-8.png)
