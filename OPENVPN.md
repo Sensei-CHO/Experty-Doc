@@ -14,4 +14,4 @@ Pour rendre le serveur OpenVPN accessible depuis le réseau WAN, il faut procede
 
 Dans le menu "QuickSet" > "Port mapping":
 
-![Alt text](image-11.png)
+![Alt text](images/image-11.png)
